@@ -5,13 +5,13 @@ if a.isdigit():
         if a % 4 == 0:
             if a % 100 == 0:
                 if a % 400 == 0:
-                    print(str(a)+" год высокостный")
+                    print(str(a)+" год высокосный")
                 else:
-                    print(str(a)+" год невысокстный")
+                    print(str(a)+" год не высокосный")
             else:
-                print(str(a)+" год высокостный")
+                print(str(a)+" год высокосный")
         else:
-            print(str(a)+" год невысокостный")
+            print(str(a)+" год не высокосный")
     else:
         print("Не соответствует требованию")
 else:
