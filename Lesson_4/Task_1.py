@@ -1,10 +1,10 @@
 a = input("Введите натуральное число: ")
-if a.isdigit() == True:
+if a.isdigit():
     n = 0
     for i in range(0, len(a)):
         for j in range(i + 1, len(a)):
-            if (a[i] == a[j]):
-                n+=1
+            if a[i] == a[j]:
+                n += 1
     if n == 0:
         print('Нет.')
     else:
