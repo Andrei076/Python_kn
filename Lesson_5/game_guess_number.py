@@ -11,8 +11,8 @@ while guess_number != number:
             guess_number = number
         else:
             if int(guess_number) < number:
-                guess_number = input("Число меньше, попробуйте еще раз ")
-            else:
                 guess_number = input("Число больше, попробуйте еще раз ")
+            else:
+                guess_number = input("Число меньше, попробуйте еще раз ")
     else:
         guess_number = input("Введеное значение не отвечает условию, попробуйте еще раз ")
