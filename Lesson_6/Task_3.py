@@ -17,6 +17,3 @@ for i in range(0, len(a_list), ):
 # a_list.sort()
 # print(a_list)
 print(f"Уникальных чисел {a}")
-
-
-
