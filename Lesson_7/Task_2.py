@@ -14,4 +14,4 @@ for i in range(0, (len(a))):
 for i in range(0, (len(a))):
     if a[i][2] >= m:
         n.append(a[i][0])
-print("Ученики ", ", ".join(n), "в этом семестре хорошо учатся!")
+print('Ученики ', ', '.join(n), ' в этом семестре хорошо учатся!')
