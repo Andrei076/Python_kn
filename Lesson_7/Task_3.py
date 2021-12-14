@@ -7,4 +7,3 @@ for i in text.split():
         d[i] = 1
 for j, t in d.items():
     print(f'Слово: {j}, Встречается в тексте: {t} раз')
-
