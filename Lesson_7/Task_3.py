@@ -1,5 +1,5 @@
 text = input('Введите текст:')
-d = {}
+d = dict()
 for i in text.split():
     if d.get(i) is not None:
         d[i] += 1
