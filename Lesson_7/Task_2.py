@@ -7,6 +7,11 @@ a = (
     ("Илона", 20, 9.9, "Жмерынка"),
     ("Надя", 21, 8.6, "Маякы")
 )
-for i in a:
-    for j in a:
-        a[]
+m = 0
+n = []
+for i in range(0, (len(a))):
+    m += a[i][2]/len(a)
+for i in range(0, (len(a))):
+    if a[i][2] >= m:
+        n.append(a[i][0])
+print("Ученики ", ", ".join(n), "в этом семестре хорошо учатся!")
