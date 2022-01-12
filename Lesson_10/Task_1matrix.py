@@ -28,9 +28,12 @@ def sortierung(matrix2, sum2, mm):
     for c in range(mm):
         for j in range(mm - 1):
             for n in range(mm - 1 - j):
-                if ((c % 2 == 0) and (matrix2[n][c] < matrix2[n + 1][c])) or (
-                        (c % 2 != 0) and (matrix2[n][c] > matrix2[n + 1][c])):
+                if (c % 2 == 0) and (matrix2[n][c] < matrix2[n + 1][c]):
                     matrix2[n][c], matrix2[n + 1][c] = matrix2[n + 1][c], \
+                                                       matrix2[n][c]
+                else:
+                    if(c % 2 != 0) and (matrix2[n][c] > matrix2[n + 1][c]):
+                        matrix2[n][c], matrix2[n + 1][c] = matrix2[n + 1][c], \
                                                        matrix2[n][c]
     return matrix2, sum2
 
