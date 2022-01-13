@@ -6,6 +6,7 @@ if M.isdigit() and int(M) > 5:
     print("До сортировки: ")
 else:
     print("Вы ввели неправильно")
+    exit(2)
 matrix = [[random.randrange(1, 50) for y in range(M)] for x in range(M)]
 for i in range(len(matrix)):
     for r in range(len(matrix[i])):
@@ -31,10 +32,9 @@ def sortierung(matrix2, sum2, mm):
                 if (c % 2 == 0) and (matrix2[n][c] < matrix2[n + 1][c]):
                     matrix2[n][c], matrix2[n + 1][c] = matrix2[n + 1][c], \
                                                        matrix2[n][c]
-                else:
-                    if (c % 2 != 0) and (matrix2[n][c] > matrix2[n + 1][c]):
-                        matrix2[n][c], matrix2[n + 1][c] = matrix2[n + 1][c], \
-                                                           matrix2[n][c]
+                elif (c % 2 != 0) and (matrix2[n][c] > matrix2[n + 1][c]):
+                    matrix2[n][c], matrix2[n + 1][c] = matrix2[n + 1][c], \
+                                                       matrix2[n][c]
     return matrix2, sum2
 
 
